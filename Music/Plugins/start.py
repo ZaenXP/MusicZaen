@@ -35,7 +35,7 @@ pstart_markup=InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ], 
-                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/Chutuya-11-27")],
+                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/Zaen_Music-11-27")],
                 [
                     InlineKeyboardButton(
                         "📢 Uᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/Zaen_Music"), 
