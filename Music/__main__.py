@@ -13,7 +13,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 import time
 
 Client(
-    ':Music:',
+    ':MusicZaen:',
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
