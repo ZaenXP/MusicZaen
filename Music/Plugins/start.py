@@ -21,7 +21,7 @@ from Music.MusicUtilities.database.sudo import (get_sudoers, get_sudoers, remove
 def start_pannel():  
     buttons  = [
             [
-                InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/ZaenMusic-11-27")
+                InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/ZaenMusic-12-05")
             ],
             [ 
                 InlineKeyboardButton(text="📨Official Channel", url="https://t.me/Zaen_Music"),
@@ -33,16 +33,16 @@ def start_pannel():
 pstart_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("↗️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ ↗️", url=f"https://t.me/{ZaenBukan_bot}?startgroup=true"),
                 ], 
-                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/Zaen_Music-11-27")],
+                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ ", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "📢 Uᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/Zaen_Music"), 
+                        "📱 Channel ", url=f"https://t.me/Zaen_Music"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/Zaen_Music")
+                        "💬 Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/Zaen_Music")
                 ],
-                [ InlineKeyboardButton("🧑‍💻 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 🧑‍💻", url=f"https://GitHub.com/ZaenProject/Music"),]
+          
 
             ]
         )
