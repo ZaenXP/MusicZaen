@@ -33,7 +33,7 @@ def start_pannel():
 pstart_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("↗️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ ↗️", url=f"https://t.me/{ZaenBukan_bot}?startgroup=true"),
+                    InlineKeyboardButton("↗️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ ↗️", url=f"https://t.me/ZaenBukan_bot")?startgroup=true"),
                 ], 
                 [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ ", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
