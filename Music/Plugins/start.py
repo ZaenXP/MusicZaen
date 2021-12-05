@@ -21,7 +21,7 @@ from Music.MusicUtilities.database.sudo import (get_sudoers, get_sudoers, remove
 def start_pannel():  
     buttons  = [
             [
-                InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/Zaen-Music-11-27")
+                InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/ZaenMusic-11-27")
             ],
             [ 
                 InlineKeyboardButton(text="📨Official Channel", url="https://t.me/Zaen_Music"),
