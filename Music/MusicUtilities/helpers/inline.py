@@ -15,8 +15,8 @@ def play_markup(videoid, user_id):
                 InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
             ],
             [
-                InlineKeyboardButton(text="🔎 Search Lyrics", callback_data=f'lyrics {videoid}|{user_id}'),
-                InlineKeyboardButton(text="🔗 Other Menu", callback_data=f'other {videoid}|{user_id}'),
+                InlineKeyboardButton(text="🔎  Lyrics", callback_data=f'lyrics {videoid}|{user_id}'),
+                InlineKeyboardButton(text="⚙️  Menu", callback_data=f'other {videoid}|{user_id}'),
             ],
             [      
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data=f'close2')
@@ -32,11 +32,11 @@ def others_markup(videoid, user_id):
                 InlineKeyboardButton(text="➕ Group Playlist", callback_data=f'group_playlist {videoid}|{user_id}')
             ],
             [
-                InlineKeyboardButton(text="⬇️ Get Audio", callback_data=f'gets audio|{videoid}|{user_id}'),
-                InlineKeyboardButton(text="⬇️ Get Video", callback_data=f'gets video|{videoid}|{user_id}')
+                InlineKeyboardButton(text="⬇️  Audio", callback_data=f'gets audio|{videoid}|{user_id}'),
+                InlineKeyboardButton(text="⬇️  Video", callback_data=f'gets video|{videoid}|{user_id}')
             ],
             [
-                InlineKeyboardButton(text="⬅️  Go Back", callback_data=f'goback {videoid}|{user_id}'),
+                InlineKeyboardButton(text="⬅️   Back", callback_data=f'goback {videoid}|{user_id}'),
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data=f'close2')
             ],
         ]
@@ -88,8 +88,8 @@ def audio_markup(videoid, user_id):
 def single_markup(ID, duration, user_id, query):
     buttons= [
             [
-                InlineKeyboardButton(text="▶️ Start Playing", callback_data=f'Music {ID}|{duration}|{user_id}'),
-                InlineKeyboardButton(text="🔎 Search More", callback_data=f'popat 1|{query}|{user_id}')
+                InlineKeyboardButton(text="▶️ ʟᴀɴɢsᴜɴɢ ᴘᴜᴛᴀʀ", callback_data=f'Music {ID}|{duration}|{user_id}'),
+                InlineKeyboardButton(text="🔎 ᴘɪʟɪʜ ʟᴀɢᴜ", callback_data=f'popat 1|{query}|{user_id}')
             ],
             [
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"ppcl2 smex|{user_id}")
@@ -155,7 +155,7 @@ start_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Commands", url="https://telegra.ph/Music-Bot-10-10"
+                        "📱 Commands", url="https://telegra.ph/Music-Bot-10-10"
                     )
                 ],
                 [
