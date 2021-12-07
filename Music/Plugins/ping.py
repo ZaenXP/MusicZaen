@@ -20,7 +20,7 @@ Disk: {disk}%'''
     return stats
 
 
-@app.on_message(filters.command(["ping", "ping@MentosMusicBot"]))
+@app.on_message(filters.command(["ping", "ping@ZaenBukan_bot"]))
 async def ping(_, message):
     uptime = await bot_sys_stats()
     start = datetime.now()
