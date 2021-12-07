@@ -155,7 +155,7 @@ start_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📱 Commands", url="https://telegra.ph/Music-Bot-10-10"
+                        "📱 Commands", url="https://telegra.ph/ZaenMusic-12-05"
                     )
                 ],
                 [
