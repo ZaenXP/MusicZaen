@@ -25,8 +25,9 @@ def start_pannel():
             ],
             [ 
                 InlineKeyboardButton(text="➡️ Channel⬅️", url="https://t.me/Zaen_Music"),
-                InlineKeyboardButton(text="➡️ Group⬅️", url="https://t.me/Zaen_Music")
-            ],
+            [    InlineKeyboardButton(text="➡️ Group⬅️", url="https://t.me/Zaen_Music")
+
+            ],  InlineKeyboardButton(text="➡️ Owner⬅️", url="https://t.me/Mafia_tobatz")
     ]
     return "🎛  **This is Music Music Bot**", buttons
 
