@@ -85,7 +85,7 @@ async def play(_, message: Message):
         user_name = message.from_user.first_name
         rpk = "["+user_name+"](tg://user?id="+str(user_id)+")" 
         await app.send_message(message.chat.id,
-            text=f"Hello {rpk}!\n\nThis is ZaenMusic Bot.\nI play music on Telegram's Voice Chats.\n\nOnly for selected chats.",
+            text=f"Hello {rpk}!\n\nThis is ZaenMusic Mega Bot.\nI play music on Telegram's Voice Chats.\n\nOnly for selected chats.",
             parse_mode="markdown",
             reply_markup=pstart_markup,
             reply_to_message_id=message.message_id
