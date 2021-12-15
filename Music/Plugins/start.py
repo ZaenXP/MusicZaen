@@ -24,8 +24,8 @@ def start_pannel():
                 InlineKeyboardButton(text="🧰Commands Menu🧰", url="https://telegra.ph/ZaenMusic-12-05")
             ],
             [ 
-                InlineKeyboardButton(text="➡️ Channel⬅️", url="https://t.me/Zaen_Music"),
-                InlineKeyboardButton(text="➡️ Group⬅️", url="https://t.me/Zaen_Music")
+                InlineKeyboardButton(text="➡️ Channel⬅️", url="https://t.me/GabutSupport"),
+                InlineKeyboardButton(text="➡️ Group⬅️", url="https://t.me/GabutSupport")
             ],  
     ]
     return "🎛  **This is Music Music Bot**", buttons
@@ -38,9 +38,9 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ ", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "📱 Channel ", url=f"https://t.me/Zaen_Music"), 
+                        "📱 Channel ", url=f"https://t.me/GabutSupport"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/Zaen_Music")
+                        "💬 Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/GabutSupport")
                 ],
           
 
