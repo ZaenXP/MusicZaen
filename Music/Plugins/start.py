@@ -38,9 +38,9 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "📱 Channel ", url=f"https://t.me/GabutSupport"), 
+                        "📱 Channel 📱", url=f"https://t.me/GabutSupport"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/GabutSupport")
+                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/GabutSupport")
                 ],
           
 
