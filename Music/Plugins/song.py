@@ -294,8 +294,8 @@ def gets(videoid, user_id):
 def single_markup(ID, duration, user_id, query):
     buttons= [
             [
-                InlineKeyboardButton(text="▶️ Start Playing", callback_data=f'beta {ID}|{duration}|{user_id}'),
-                InlineKeyboardButton(text="🔎 Search More", callback_data=f'chonga 1|{query}|{user_id}')
+                InlineKeyboardButton(text="▶️ sᴛᴀʀᴛ ", callback_data=f'beta {ID}|{duration}|{user_id}'),
+                InlineKeyboardButton(text="🔎 ᴘɪʟɪʜ ʟᴀɢᴜ ", callback_data=f'chonga 1|{query}|{user_id}')
             ],
             [
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"ppcl2 smex|{user_id}")
