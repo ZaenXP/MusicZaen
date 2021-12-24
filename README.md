@@ -8,4 +8,3 @@
     <a href="https://github.com/ZaenProject/Music/issues"> <img src="https://img.shields.io/github/issues/ZaenProject/ZaenMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/ZaenProject/Music/network/members"> <img src="https://img.shields.io/github/forks/ZaenProject/Music?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
     <a href="https://github.com/ZaenProject/Music/network/members"> <img src="https://img.shields.io/github/stars/ZaenProject/Music?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-</p>
