@@ -43,7 +43,7 @@ async def theme_func(_, message):
         except Exception as e:
             await message.reply_text(f"{e}")
             pass    
-    x = await message.reply_text(f"__Restarting MentosMusic!__")   
+    x = await message.reply_text(f"__Restarting ZaenMusic!__")   
     await start_restart_stage(x.chat.id, x.message_id)
     os.execvp(f"python{str(pyver.split(' ')[0])[:3]}", [
               f"python{str(pyver.split(' ')[0])[:3]}", "-m", "Music"])
