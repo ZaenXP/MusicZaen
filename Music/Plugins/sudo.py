@@ -25,7 +25,7 @@ async def useradd(_, message: Message):
             return await message.reply_text("Aleady a Sudo User.")
         added = await add_sudo(user.id)
         if added:
-            await message.reply_text(f"Added **{user.mention}** as a Super User for Music OwO")
+            await message.reply_text(f"Added **{user.mention}** as a Super User for ZaenMusic")
             return os.execvp("python3", ["python3", "-m", "Music"])
         await edit_or_reply(message, text="Something wrong happened, check logs.")  
         return
@@ -37,7 +37,7 @@ async def useradd(_, message: Message):
         return await message.reply_text("Already a Sudo User.")
     added = await add_sudo(user_id)
     if added:
-        await message.reply_text(f"Added **{mention}** as a Super User for Music OwO")
+        await message.reply_text(f"Added **{mention}** as a Super User for ZaenMusic")
         return os.execvp("python3", ["python3", "-m", "Music"])
     await edit_or_reply(message, text="Something wrong happened, check logs.")  
     return    
