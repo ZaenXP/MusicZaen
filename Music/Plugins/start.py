@@ -27,6 +27,8 @@ def start_pannel():
                 InlineKeyboardButton(text="Channel", url="https://t.me/SharingUserbot"),
                 InlineKeyboardButton(text="Group", url="https://t.me/SharingUserbot")
             ],  
+
+            [ InlineKeyboardButton("Developer", url=f"https://t.me/TeleUdahRusak"),]
     ]
     return "🎛  **This is Music Music Bot**", buttons
 
