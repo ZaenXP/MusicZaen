@@ -21,11 +21,11 @@ from Music.MusicUtilities.database.sudo import (get_sudoers, get_sudoers, remove
 def start_pannel():  
     buttons  = [
             [
-                InlineKeyboardButton(text="🧰Commands Menu🧰", url="https://telegra.ph/ZaenMusic-12-05")
+                InlineKeyboardButton(text="Commands Menu", url="https://telegra.ph/ZaenMusic-12-05")
             ],
             [ 
-                InlineKeyboardButton(text="➡️ Channel⬅️", url="https://t.me/GabutSupport"),
-                InlineKeyboardButton(text="➡️ Group⬅️", url="https://t.me/GabutSupport")
+                InlineKeyboardButton(text="Channel", url="https://t.me/SharingUserbot"),
+                InlineKeyboardButton(text="Group", url="https://t.me/SharingUserbot")
             ],  
     ]
     return "🎛  **This is Music Music Bot**", buttons
@@ -33,14 +33,14 @@ def start_pannel():
 pstart_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("↗️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ ↗️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ], 
-                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/ZaenMusic-12-05")],
+                [InlineKeyboardButton("Commands", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "📱 Channel 📱", url=f"https://t.me/GabutSupport"), 
+                        "Channel", url=f"https://t.me/SharingUserbot"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/GabutSupport")
+                        "Support", url=f"https://t.me/SharingUserbot")
                 ],
           
 
