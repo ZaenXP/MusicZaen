@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 from Music.MusicUtilities.tgcallsrun import ASS_ACC as USER
 
-@Client.on_message(filters.private & filters.incoming & filters.command("userbotjoin"))
+@Client.on_message(filters.private & filters.incoming & filters.command("join"))
 async def userbotjoin(_, message: Message):
     lol = await message.reply_text("**Processing...**")
     print("join request")
