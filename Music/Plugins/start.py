@@ -45,7 +45,7 @@ pstart_markup=InlineKeyboardMarkup(
                         "Support", url=f"https://t.me/SharingUserbot")
                 ],
           
-                [ InlineKeyboardButton("Developer", url=f"https://t.me/TeleUdahRusak"),]
+               
 
             ]
         )
