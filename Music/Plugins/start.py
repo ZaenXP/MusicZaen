@@ -37,7 +37,7 @@ pstart_markup=InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton("➕ [ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴜᴘ] ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ], 
-                [InlineKeyboardButton("Commands", url=f"https://telegra.ph/ZaenMusic-12-05")],
+                [InlineKeyboardButton("[Commands]", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
                         "[Channel]", url=f"https://t.me/SharingUserbot"), 
