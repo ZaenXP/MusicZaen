@@ -53,11 +53,12 @@ async def alive(client, message):
     await client.send_photo(message.chat.id,
         photo=f"{BOT_IMG}",
         caption=f"""**Hallo {message.from_user.mention()}.**
-❏ **Bot Info : Online**
-❏ **Uptime : `{uptime}`**
-❏ **Pyrogram Version : `{pyrover}`**
-❏ **PyTgCalls Version: `{pytover.__version__}`**
-**❏Thanks For Using Me❏ **""",
+
+➠ **Bot Info : Online**
+➠ **Uptime : `{uptime}`**
+➠ **Pyrogram Version : `{pyrover}`**
+➠ **PyTgCalls Version: `{pytover.__version__}`**
+**✧Thanks For Using Me✧ **""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
