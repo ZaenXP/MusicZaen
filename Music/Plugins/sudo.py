@@ -77,7 +77,7 @@ async def userdel(_, message: Message):
 @app.on_message(filters.command("listsudo"))
 async def sudoers_list(_, message: Message):
     sudoers = await get_sudoers()
-    text = "**__Sudo Users List of ZaenMusic:-__**\n\n"
+    text = "**__Sudo Users List of MusicZaen:-__**\n\n"
     for count, user_id in enumerate(sudoers, 1):
         try:                     
             user = await app.get_users(user_id)
