@@ -42,7 +42,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-ZAEN_IMG = "https://telegra.ph/file/1ff085441a2a6c1cd1ab9.jpg"
+BOT_IMG = "https://telegra.ph/file/1ff085441a2a6c1cd1ab9.jpg"
 
 
 @app.on_message(filters.command(["alive", "alive@Tg_Vc_00_Bot"]))
@@ -51,7 +51,7 @@ async def alive(client, message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
-        photo=f"{ZAEN_IMG}",
+        photo=f"{BOT_IMG}",
         caption=f"""**Holla {message.from_user.mention()}.** \n
 ❏ **I'm Working Properly** \n
 ❏ **Uptime : `{uptime}`** \n
