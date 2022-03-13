@@ -54,6 +54,7 @@ async def alive(client, message):
         photo=f"{BOT_IMG}",
         caption=f"""**Hallo {message.from_user.mention()}.**
 
+
 ➠ **Bot Info : Online**
 ➠ **Uptime : `{uptime}`**
 ➠ **Pyrogram Version : `{pyrover}`**
