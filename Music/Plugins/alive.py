@@ -56,8 +56,11 @@ async def alive(client, message):
 
 
 ➠ **Bot Info : Online**
+"
 ➠ **Uptime : `{uptime}`**
+"
 ➠ **Pyrogram Version : `{pyrover}`**
+"
 ➠ **PyTgCalls Version: `{pytover.__version__}`**
 **✧Thanks For Using Me✧ **""",
         reply_markup=InlineKeyboardMarkup(
