@@ -48,6 +48,16 @@
             "description": "filled, don't change this !",
             "required": true,
             "value": ""
+       },
+        "GROUP": {
+            "description": "Isi dengan username group tanpa @",
+            "required": true,
+            "value": "Mafia_Tobatz"
+        },
+         "CHANNEL": {
+            "description": "Isi dengan username channel tanpa @",
+            "required": true,
+            "value": "Mafia_Tobatz"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
