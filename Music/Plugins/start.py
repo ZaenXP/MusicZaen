@@ -24,11 +24,11 @@ def start_pannel():
                 InlineKeyboardButton(text="[Commands Menu]", url="https://telegra.ph/ZaenMusic-12-05")
             ],
             [ 
-                InlineKeyboardButton(text="[Channel]", url="https://t.me/SharingUserbot"),
-                InlineKeyboardButton(text="[Group]", url="https://t.me/SharingUserbot")
+                InlineKeyboardButton(text="[Channel]", url="https://t.me/Mafia_Tobatz"),
+                InlineKeyboardButton(text="[Group]", url="https://t.me/GabutnyaZaen")
             ],  
 
-            [ InlineKeyboardButton("[Dev]", url=f"https://t.me/TeleUdahRusak"),]
+            [ InlineKeyboardButton("[Dev]", url=f"https://t.me/Mafia_Tobatz"),]
     ]
     return "🎛  **This is Music Music Bot**", buttons
 
@@ -40,13 +40,12 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("[Commands]", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "[Channel]", url=f"https://t.me/SharingUserbot"), 
+                        "[Channel]", url=f"https://t.me/Mafia_Tobatz"), 
                     InlineKeyboardButton(
-                        "[Support]", url=f"https://t.me/SharingUserbot")
+                        "[Support]", url=f"https://t.me/GabutNyaZaen")
                 ],
           
-                [ InlineKeyboardButton("[Dev]", url=f"https://t.me/TeleUdahRusak"),]
-
+                
 
             ]
         )
