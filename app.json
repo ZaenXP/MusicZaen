@@ -7,7 +7,7 @@
         "voice chat", 
         "telegram"
     ],
-    "repository": "https://github.com/Zaen-ubot/Music",
+    "repository": "https://github.com/Zaen67/Music",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
