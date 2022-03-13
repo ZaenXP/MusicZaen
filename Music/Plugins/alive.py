@@ -1,3 +1,4 @@
+@@ -0,0 +1,76 @@
 # © KenendyXMusic
 # Adjustment for yukki by Fariz <XBOT-MUSIC>
 # Thanks Ken 💙
@@ -52,12 +53,11 @@ async def alive(client, message):
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
         photo=f"{BOT_IMG}",
-        caption=f"""**Holla {message.from_user.mention()}.** \n
-❏ **I'm Working Properly** \n
-❏ **Uptime : `{uptime}`** \n
-❏ **Pyrogram Version : `{pyrover}`** \n
-❏ **PyTgCalls Version: `{pytover.__version__}`** \n
-
+        caption=f"""**Hallo {message.from_user.mention()}.**
+❏ **Bot Info : Online**
+❏ **Uptime : `{uptime}`**
+❏ **Pyrogram Version : `{pyrover}`**
+❏ **PyTgCalls Version: `{pytover.__version__}`**
 **❏Thanks For Using Me❏ **""",
         reply_markup=InlineKeyboardMarkup(
             [
