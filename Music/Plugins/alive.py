@@ -1,4 +1,3 @@
-@@ -0,0 +1,76 @@
 # © KenendyXMusic
 # Adjustment for yukki by Fariz <XBOT-MUSIC>
 # Thanks Ken 💙
