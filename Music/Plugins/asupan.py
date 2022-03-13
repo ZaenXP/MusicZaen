@@ -3,7 +3,7 @@
 
 import requests
 from pyrogram import Client
-from Plugins import BOT_USERNAME
+from pyrogram import BOT_USERNAME
 from helpers.filters import command
 
 @Client.on_message(command(["asupan", f"asupan@{BOT_USERNAME}"]))
