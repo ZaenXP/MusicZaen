@@ -1,5 +1,5 @@
 import itertools
-import Music.modules.sql.language_sql as sql
+import Music.modules.Plugins.language_Plugins as Plugins
 
 from typing import Union, List, Dict, Callable, Generator, Any
 
