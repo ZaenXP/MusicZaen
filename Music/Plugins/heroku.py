@@ -9,7 +9,6 @@ import random
 import shutil
 from datetime import datetime
 from time import strftime, time
-import heroku3
 import requests
 import urllib3
 from git import Repo
