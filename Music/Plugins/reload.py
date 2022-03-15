@@ -1,8 +1,5 @@
 from pyrogram import filters
 from pyrogram.types import Message
-
-from config import Message, MUSIC_BOT_NAME, adminlist
-from strings import get_command
 from Music import app
 from Music.core.call import Music
 from Music.misc import db
