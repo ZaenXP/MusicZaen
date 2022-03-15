@@ -126,4 +126,4 @@ async def language_markup(client, CallbackQuery, _):
         )
     await set_lang(CallbackQuery.message.chat.id, langauge)
     keyboard = lanuages_keyboard(_)
-    return await CallbackQuery.edit_message_reply_markup(        
+    return await CallbackQuery.edit_message_reply_markup(
