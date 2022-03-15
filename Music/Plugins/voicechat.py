@@ -7,8 +7,6 @@ from sys import version as pyver
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-
-from Music import SUDOERS, app, db_mem, userbot
 from Music.MusicUtilities.database import get_active_chats, is_active_chat
 from Music.MusicUtilities.helpers.checker import checker, checkerCB
 
