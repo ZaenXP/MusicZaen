@@ -4,7 +4,7 @@ import shutil
 import subprocess
 from sys import version as pyver
 
-from Music.config import get_queue
+from Music.config import Music
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
