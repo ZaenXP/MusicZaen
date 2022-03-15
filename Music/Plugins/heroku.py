@@ -11,7 +11,6 @@ from datetime import datetime
 from time import strftime, time
 import requests
 import urllib3
-from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import Client, filters
 from pyrogram.types import Message
