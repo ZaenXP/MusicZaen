@@ -2,7 +2,6 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from config import BANNED_USERS
 from strings import get_command, get_string
 from Music import app
 from Music.utils.database import get_lang, set_lang
