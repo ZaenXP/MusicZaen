@@ -1,5 +1,4 @@
 import itertools
-import Music.modules.Plugins.language_Plugins as Plugins
 
 from typing import Union, List, Dict, Callable, Generator, Any
 
@@ -7,9 +6,9 @@ from collections.abc import Iterable
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 
-from PrimeMega import dispatcher
-from PrimeMega.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from PrimeMega.language import get_string, get_languages, get_language
+from Music import dispatcher
+from Music.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from Music.language import get_string, get_languages, get_language
 
 
 
