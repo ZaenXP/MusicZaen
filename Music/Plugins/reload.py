@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist
+from config import Music, MUSIC_BOT_NAME, adminlist
 from strings import get_command
 from Music import app
 from Music.core.call import Music
@@ -20,7 +20,7 @@ RESTART_COMMAND = get_command("RESTART_COMMAND")
     filters.command(RELOAD_COMMAND)
     & filters.group
     & ~filters.edited
-    & ~BANNED_USERS
+    
 )
 @language
 async def reload_admin_cache(client, message: Message, _):
@@ -48,7 +48,7 @@ async def reload_admin_cache(client, message: Message, _):
     filters.command(RESTART_COMMAND)
     & filters.group
     & ~filters.edited
-    & ~BANNED_USERS
+    
 )
 @AdminActual
 async def restartbot(client, message: Message, _):
