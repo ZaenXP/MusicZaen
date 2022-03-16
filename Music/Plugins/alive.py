@@ -42,7 +42,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-BOT_IMG = "https://telegra.ph/file/1ff085441a2a6c1cd1ab9.jpg"
+BOT_IMG = "https://telegra.ph/file/780873fe71db2e7b5b908.jpg"
 
 
 @app.on_message(filters.command(["alive", "alive@Tg_Vc_00_Bot"]))
@@ -67,7 +67,7 @@ async def alive(client, message):
 ➠ **PyTgCalls Version: `{pytover.__version__}`**
 
 "
-**✧Thanks For Using Me✧ **""",
+**✧Iam Working Now✧ **""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
