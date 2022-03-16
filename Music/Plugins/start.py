@@ -40,7 +40,7 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("[Commands]", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "[Channel]", url=f"https://t.me/Mafia_Tobatz"), 
+                        "[Channel]", url=f"https://t.me/Mafia_TobaTz"), 
                     InlineKeyboardButton(
                         "[Support]", url=f"https://t.me/GabutNyaZaen")
                 ],
