@@ -67,7 +67,7 @@ async def alive(client, message):
 ➠ **PyTgCalls Version: `{pytover.__version__}`**
 
 "
-**✧Iam Working Now✧ **""",
+**✧Iam Working Now✧**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
