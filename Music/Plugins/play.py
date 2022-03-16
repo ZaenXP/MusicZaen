@@ -54,7 +54,7 @@ def time_to_seconds(time):
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
 
-@Client.on_message(command(["play", "play@ZaenBukan_bot"]))
+@Client.on_message(command(["play", "play@MusicZaenBot"]))
 async def play(_, message: Message):
     chat_id = message.chat.id
 #   if not await is_served_chat(chat_id):
