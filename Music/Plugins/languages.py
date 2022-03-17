@@ -2,7 +2,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 from Music import app
-from Music.MusicUtilities.plugins import get_lang, set_lang
+from Music.MusicUtilities.Message import get_lang, set_lang
 from Music.plugins.decorators import (ActualAdminCB, language,
                                          languageCB)
 
