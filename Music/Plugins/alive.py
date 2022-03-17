@@ -1,7 +1,5 @@
 # © KenendyXMusic
-# Adjustment for yukki by Fariz <XBOT-MUSIC>
-# Thanks Ken 💙
-# Ported by Fariz
+# Thanks Ken 💙 
 
 from os import path
 from pyrogram import Client, filters
