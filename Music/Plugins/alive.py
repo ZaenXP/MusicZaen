@@ -50,7 +50,7 @@ async def alive(client, message):
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
         photo=f"{BOT_IMG}",
-        caption=f"""**Hallo {message.from_user.mention()}.**
+        caption=f"""**Hallo {message.from_user.mention()},I'm MusicZaen**
 
 
 ➠ **Bot Info : Online**
