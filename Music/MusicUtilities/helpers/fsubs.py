@@ -17,7 +17,7 @@ def subcribe(func):
                 await app.get_chat_member(MUST_JOIN, message.from_user.id)
             except UserNotParticipant:
                 if MUST_JOIN.isalpha():
-                    link = "https://t.me/"Mafia_Tobatz",)
+                    link = "https://t.me/" + MUST_JOIN
                 else:
                     chat_info = await app.get_chat(MUST_JOIN)
                     chat_info.invite_link
