@@ -9,12 +9,6 @@ from pyrogram.types import (
 def play_markup(videoid, user_id):
     buttons= [
             [
-                InlineKeyboardButton(text="▶️", callback_data=f'resumevc2'),
-                InlineKeyboardButton(text="⏸️", callback_data=f'pausevc2'),
-                InlineKeyboardButton(text="⏭️", callback_data=f'skipvc2'),
-                InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
-            ],
-            [
                 InlineKeyboardButton(text="🔎  Lyrics", callback_data=f'lyrics {videoid}|{user_id}'),
                 InlineKeyboardButton(text="⚙️  Menu", callback_data=f'other {videoid}|{user_id}'),
             ],
