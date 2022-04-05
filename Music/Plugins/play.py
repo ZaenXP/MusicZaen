@@ -494,7 +494,6 @@ async def popat(_,CallbackQuery):
     query = str(query)
     try:
         a = VideosSearch(query, limit=5)
-            result = (a.result()).get("result")
             title1 = (result[0]["title"])
             duration1 = (result[0]["duration"])
             title2 = (result[1]["title"])
