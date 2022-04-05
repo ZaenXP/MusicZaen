@@ -153,7 +153,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/Mafia_Tobatz"
+        link = "https://t.me/Mafia_TobatZ"
         thumb = "cache/Audio.png"
         videoid = "smex1"
     elif url:
@@ -493,32 +493,57 @@ async def popat(_,CallbackQuery):
     i=int(id)
     query = str(query)
     try:
-        a = VideosSearch(query, limit=5)
-            title1 = (result[0]["title"])
-            duration1 = (result[0]["duration"])
-            title2 = (result[1]["title"])
-            duration2 = (result[1]["duration"])      
-            title3 = (result[2]["title"])
-            duration3 = (result[2]["duration"])
-            title4 = (result[3]["title"])
-            duration4 = (result[3]["duration"])
-            title5 = (result[4]["title"])
-            duration5 = (result[4]["duration"])
-            ID1 = (result[0]["id"])
-            ID2 = (result[1]["id"])
-            ID3 = (result[2]["id"])
-            ID4 = (result[3]["id"])
-            ID5 = (result[4]["id"])
-        except Exception as e:
-            return await mystic.edit_text(f"😕 Sorry, we **couldn't** find the song you were looking for\n\n• Check that the **name is correct** or **try by searching the artist.**", reply_markup=close_keyboard)
-        thumb = "cache/results.png"
-        url = "https://www.youtube.com/watch?v={id}"
+        a = VideosSearch(query, limit=10)
+        result = (a.result()).get("result")
+        title1 = (result[0]["title"])
+        duration1 = (result[0]["duration"])
+        title2 = (result[1]["title"])
+        duration2 = (result[1]["duration"])      
+        title3 = (result[2]["title"])
+        duration3 = (result[2]["duration"])
+        title4 = (result[3]["title"])
+        duration4 = (result[3]["duration"])
+        title5 = (result[4]["title"])
+        duration5 = (result[4]["duration"])
+        title6 = (result[5]["title"])
+        duration6 = (result[5]["duration"])
+        title7= (result[6]["title"])
+        duration7 = (result[6]["duration"])      
+        title8 = (result[7]["title"])
+        duration8 = (result[7]["duration"])
+        title9 = (result[8]["title"])
+        duration9 = (result[8]["duration"])
+        title10 = (result[9]["title"])
+        duration10 = (result[9]["duration"])
+        ID1 = (result[0]["id"])
+        ID2 = (result[1]["id"])
+        ID3 = (result[2]["id"])
+        ID4 = (result[3]["id"])
+        ID5 = (result[4]["id"])
+        ID6 = (result[5]["id"])
+        ID7 = (result[6]["id"])
+        ID8 = (result[7]["id"])
+        ID9 = (result[8]["id"])
+        ID10 = (result[9]["id"])                    
+    except Exception as e:
+        return await mystic.edit_text(f"Song Not Found.\n**Possible Reason:**{e}")
+    if i == 1:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
-        await mystic.edit(
-            f"• Choose the results to play !\n\n1️⃣ <b>[{title1[:35]}...]({url})</b>\n └ 💡 [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})\n\n2️⃣ <b>[{title2[:35]}...]({url})</b>\n └ 💡 [More information](https://t.me/{BOT_USERNAME}?start=info_{ID2})\n\n3️⃣ <b>[{title3[:35]}...]({url})</b>\n └ 💡 [More information](https://t.me/{BOT_USERNAME}?start=info_{ID3})\n\n4️⃣ <b>[{title4[:35]}...]({url})</b>\n └ 💡 [More information](https://t.me/{BOT_USERNAME}?start=info_{ID4})\n\n5️⃣ <b>[{title5[:35]}...]({url})</b>\n └ 💡 [More information](https://t.me/{BOT_USERNAME}?start=info_{ID5})",    
+        await CallbackQuery.edit_message_text(
+            f"1️⃣<b>{title1}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n\n2️⃣<b>{title2}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n\n3️⃣<b>{title3}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n\n4️⃣<b>{title4}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n\n5️⃣<b>{title5}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>",   
             reply_markup=InlineKeyboardMarkup(buttons),
-            disable_web_page_preview=True
-        )
+        )  
+        disable_web_page_preview=True
+        return
+    
+    if i == 2:
+        buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
+        await CallbackQuery.edit_message_text(
+            f"6️⃣<b>{title6}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})__</u>\n\n7️⃣<b>{title7}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})__</u>\n\n8️⃣<b>{title8}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})__</u>\n\n9️⃣<b>{title9}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})__</u>\n\n🔟<b>{title10}</b>\n  ┗  🔗 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})__</u>",    
+            reply_markup=InlineKeyboardMarkup(buttons),
+        )  
+        disable_web_page_preview=True
+        return  
         
         
 @app.on_message(filters.command("playplaylist"))
