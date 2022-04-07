@@ -3,7 +3,7 @@ from os import path, listdir
 
 from pyrogram import emoji
 
-from Music.MusicUtilities.database import ChatDB
+from Music.MusicUtilities.database import filters
 
 lang_folder = path.join(path.dirname(path.realpath(__file__)), "lang")
 code = ""
