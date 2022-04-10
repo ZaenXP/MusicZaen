@@ -598,4 +598,3 @@ async def play_playlist_cmd(_, message):
     photo=thumb, 
     caption=("**__Music's Playlist Feature__**\n\nSelect the Playlist you want to play!."),    
     reply_markup=InlineKeyboardMarkup(buttons),
-    )
