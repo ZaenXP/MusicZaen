@@ -54,65 +54,14 @@ def time_to_seconds(time):
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
 
-@Client.on_message(command(["play", f"play@{BOT_USERNAME}", "p"]))
+@Client.on_message(command(["play", "play@MusicZaenBot"]))
 async def play(_, message: Message):
-    mmk = message.reply_to_message
     chat_id = message.chat.id
-    user_id = message.from_user.id
-    user_name = message.from_user.first_name
-    rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
-    global que
-    global useer
-    if chat_id in DISABLED_GROUPS:
-        return await message.reply_text(
-            f"😕 Maaf kak {message.from_user.mention}, Musicnya sedang tidak aktif,tag Admin untuk mengaktifkan" 
-        )
-        return
-    if chat_id in BANNED_USERS:
-        await app.send_message(
-            chat_id,
-            text=f"❌ Anda telah di ban\nUbtuk menggunakan bot anda harus join di [Group](https://t.me/{UPDATES_CHANNEL})",
-            reply_to_message_id=message.message_id,
-        )
-        return
-    ## Doing Force Sub 🤣
-    update_channel = UPDATES_CHANNEL
-    if update_channel:
-        try:
-            user = await app.get_chat_member(update_channel, user_id)
-            if user.status == "kicked":
-                await app.send_message(
-                    chat_id,
-                    text=f"❌ Anda telah di ban\nUbtuk menggunakan bot anda harus join di [Group](https://t.me/{UPDATES_CHANNEL})",
-                    parse_mode="markdown",
-                    disable_web_page_preview=True,
-                )
-                return
-        except UserNotParticipant:
-            await app.send_message(
-                chat_id,
-                text=f"""
-👋 ʜᴀʟᴏ​ {rpk} ᴜɴᴛᴜᴋ ᴍᴇɴɢʜɪɴᴅᴀʀɪ ᴘᴇɴɢɢᴜɴᴀᴀɴ ʏᴀɴɢ ʙᴇʀʟᴇʙɪʜᴀɴ ʙᴏᴛ ɪɴɪ ᴅɪ ᴋʜᴜsᴜsᴋᴀɴ ᴜɴᴛᴜᴋ ʏᴀɴɢ sᴜᴅᴀʜ ᴊᴏɪɴ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴋᴀᴍɪ!​!
-""",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                " ᴊᴏɪɴ ᴄʜ sᴜᴘᴘᴏʀᴛ ",
-                                url=f"https://t.me/{update_channel}",
-                            )
-                        ]
-                    ]
-                ),
-                parse_mode="markdown",
-            )
-            return
+#   if not await is_served_chat(chat_id):
+#        await message.reply_text(f"**__Not in allowed chats.__**\n\nMusic Private is only for allowed chats. Ask any Sudo User to allow your chat.\nCheck Sudo Users List [From Here](https://t.me/{BOT_USERNAME}?start=sudolist)")
+#        return await app.leave_chat(chat_id)  
     if message.sender_chat:
-        return await message.reply_text(
-            """
-        return await message.reply_text("You're an __Anonymous Admin__!\nRevert back to User Account From Admin Rights.")
- 
-       )
+        return await message.reply_text("You're an __Anonymous Admin__!\nRevert back to User Account From Admin Rights.")  
     user_id = message.from_user.id
     chat_title = message.chat.title
     username = message.from_user.first_name
@@ -598,3 +547,5 @@ async def play_playlist_cmd(_, message):
     photo=thumb, 
     caption=("**__Music's Playlist Feature__**\n\nSelect the Playlist you want to play!."),    
     reply_markup=InlineKeyboardMarkup(buttons),
+    )
+    return
