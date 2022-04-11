@@ -26,7 +26,7 @@ def subcribe(func):
                         f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
-                            [[InlineKeyboardButton("Join Channel Bot", url=link)]]
+                            [[InlineKeyboardButton("Join Channel Bot", url=link")]]
                         ),
                     )
                     await message.stop_propagation()
