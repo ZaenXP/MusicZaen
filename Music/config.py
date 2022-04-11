@@ -20,5 +20,5 @@ GROUP = getenv("GROUP", None)
 CHANNEL = getenv("CHANNEL", None)
 CHANNEL = getenv("CHANNEL", None)
 MUST_JOIN = getenv("MUST_JOIN", None)
-if update_channel.startswith("@"):
-    update_channel = update_channel.replace("@", "")
+if MUST_JOIN.startswith("@"):
+    MUST_JOIN = MUST_JOIN.replace("@", "")
