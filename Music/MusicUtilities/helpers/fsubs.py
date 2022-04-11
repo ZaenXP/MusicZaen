@@ -25,14 +25,14 @@ def subcribe(func):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                        "Join Channel Bot", url=f"https://t.me/{MUST_JOIN}",
+                                        "Join Channel ", url=f"https://t.me/{MUST_JOIN}",
                                         ),
                                     ],
                                 ]
                             )
                 try:
                     await message.reply(
-                        f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",
+                        f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ  ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",
                         reply_markup=kbd_join,
                         disable_web_page_preview=True,
                     )
