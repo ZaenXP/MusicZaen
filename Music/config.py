@@ -4,6 +4,7 @@ from os import getenv
 from dotenv import load_dotenv
 
 load_dotenv()
+get_queue = {}
 SESSION_NAME = getenv('SESSION_NAME', 'session')
 BOT_TOKEN = getenv('BOT_TOKEN')
 API_ID = int(getenv('API_ID', ''))
@@ -17,3 +18,7 @@ ASS_ID = int(getenv("ASS_ID", ''))
 OWNER_ID = list(map(int, getenv('OWNER_ID', '').split()))
 GROUP = getenv("GROUP", None)
 CHANNEL = getenv("CHANNEL", None)
+CHANNEL = getenv("CHANNEL", None)
+MUST_JOIN = getenv("MUST_JOIN", None)
+if MUST_JOIN.startswith("@"):
+    MUST_JOIN = MUST_JOIN.replace("@", "")
