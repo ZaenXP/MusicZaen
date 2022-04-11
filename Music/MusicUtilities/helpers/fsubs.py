@@ -23,7 +23,7 @@ def subcribe(func):
                     chat_info.invite_link
                 try:
                     await message.reply(
-                        f"**Hallo {rpk}. Join dulu kontol.**",
+                        f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋᴀᴋ ᴀɢᴀʀ ʙɪꜱᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ, ᴋᴀᴍɪ ᴍᴇʟᴀᴋᴜᴋᴀɴ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜɪɴᴅᴀʀɪ ʙᴇʀʟᴇʙɪʜᴀɴɴʏᴀ ᴘᴇᴍᴀᴋᴀɪᴀɴ ʙᴏᴛ ᴅᴀɴ ꜱᴇᴋᴀʟɪɢᴜꜱ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀʀᴀʜᴋᴀɴ ᴋᴀᴋᴀᴋ ʙᴀɢᴀɪᴍᴀɴᴀ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ, ᴋᴀᴋᴀᴋ ᴄᴜᴋᴜᴘ ʙᴀᴄᴀ ꜱᴀᴊᴀ ᴛᴜᴛᴏʀɪᴀʟ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ. ꜱɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[InlineKeyboardButton("Join Channel Bot", url=link)]]
