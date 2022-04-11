@@ -26,7 +26,7 @@ def subcribe(func):
                                     [
                                         InlineKeyboardButton(
                                         "Join Channel Bot", url=f"https://t.me/{MUST_JOIN}",
-                                        )
+                                        ),
                                     ],
                                 ]
                             )
