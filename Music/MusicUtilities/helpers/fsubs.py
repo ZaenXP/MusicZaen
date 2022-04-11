@@ -32,7 +32,8 @@ def subcribe(func):
                             )
                 try:
                     await message.reply(
-                        f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",reply_markup=kbd_join
+                        f"**Hallo {rpk}. ᴍᴀ'ᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ ᴀᴛᴀᴜ ɢʀᴏᴜᴘ ᴋᴀᴍɪ ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ᴅᴜʟᴜ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ.**",
+                        reply_markup=kbd_join,
                         disable_web_page_preview=True,
                     )
                     await message.stop_propagation()
