@@ -34,7 +34,7 @@ def subcribe(func):
                     pass
         except ChatAdminRequired:
             await message.reply(
-                f"Saya bukan admin di chat MUST_JOIN chat : {MUST_JOIN} !"
+                f"Saya bukan admin di chat(" url=f"https://t.me/{update_channel}",
             )
         return await func(_, message)
 
