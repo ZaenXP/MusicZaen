@@ -33,6 +33,7 @@ from Music.MusicUtilities.helpers.filters import command
 from Music.MusicUtilities.helpers.gets import (get_url, themes, random_assistant, ass_det)
 from Music.MusicUtilities.helpers.logger import LOG_CHAT
 from Music.MusicUtilities.helpers.thumbnails import (gen_thumb, down_thumb)
+from Music.MusicUtilities.helpers.fsubs import subcribe
 from Music.MusicUtilities.helpers.chattitle import CHAT_TITLE
 from Music.MusicUtilities.helpers.ytdl import ytdl_opts 
 from Music.MusicUtilities.helpers.inline import (play_keyboard, search_markup2, search_markup, single_markup)
@@ -55,6 +56,7 @@ def time_to_seconds(time):
     )
 
 @Client.on_message(command(["play", "play@MusicZaenBot"]))
+@subcribe
 async def play(_, message: Message):
     chat_id = message.chat.id
 #   if not await is_served_chat(chat_id):
