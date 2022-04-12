@@ -24,8 +24,8 @@ def start_pannel():
                 InlineKeyboardButton(text="[Commands Menu]", url="https://telegra.ph/ZaenMusic-12-05")
             ],
             [ 
-                InlineKeyboardButton(text="[Channel]", url="https://t.me/Mafia_Tobatz"),
-                InlineKeyboardButton(text="[Group]", url="https://t.me/GabutnyaZaen")
+                InlineKeyboardButton(text="[Channel]", url="https://t.me/Terim4k4sih"),
+                InlineKeyboardButton(text="[Group]", url="https://t.me/Terim4k4sih")
             ],  
 
             [ InlineKeyboardButton("[Dev]", url=f"https://t.me/Mafia_Tobatz"),]
@@ -40,9 +40,9 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("[Commands]", url=f"https://telegra.ph/ZaenMusic-12-05")],
                 [
                     InlineKeyboardButton(
-                        "[Channel]", url=f"https://t.me/Mafia_TobaTz"), 
+                        "[Channel]", url=f"https://t.me/Terim4k4sih"), 
                     InlineKeyboardButton(
-                        "[Support]", url=f"https://t.me/GabutNyaZaen")
+                        "[Support]", url=f"https://t.me/Terim4k4sih")
                 ],
           
                 
