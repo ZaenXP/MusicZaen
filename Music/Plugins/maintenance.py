@@ -7,7 +7,7 @@ from Music.MusicUtilities.helpers.filters import command
 
 @Client.on_message(command("Music") & filters.user(SUDOERS))
 async def smex(_, message):
-    usage = "**Usage:**\n/Musicp [Off|On]"
+    usage = "**Usage:**\n/Musicp [enable|disable]"
     if len(message.command) != 2:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -16,18 +16,18 @@ async def smex(_, message):
     if state == "enable":
         user_id = 1
         await add_on(user_id)
-        await message.reply_text("MusicZaen Dinonaktifkan")
+        await message.reply_text("Music Enabled for Maintenance")
     elif state == "disable":
         user_id = 1
         await add_off(user_id)
-        await message.reply_text("MusicZaen berhasil di aktifkan")
+        await message.reply_text("Maintenance Mode Disabled")
     else:
         await message.reply_text(usage)
 
         
 @Client.on_message(command("st") & filters.user(SUDOERS))
 async def sls_skfs(_, message):
-    usage = "**Usage:**\n/st [off|On]"
+    usage = "**Usage:**\n/st [enable|disable]"
     if len(message.command) != 2:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -36,10 +36,10 @@ async def sls_skfs(_, message):
     if state == "enable":
         user_id = 2
         await add_on(user_id)
-        await message.reply_text("𝗦𝗽𝗲𝗲𝗱𝘁𝗲𝘀𝘆 𝗢𝗻")
+        await message.reply_text("𝗦𝗽𝗲𝗲𝗱𝘁𝗲𝘀𝘆 𝗘𝗻𝗮𝗯𝗹𝗲𝗱")
     elif state == "disable":
         user_id = 2
         await add_off(user_id)
-        await message.reply_text("Speedtest 𝗢𝗳𝗳")
+        await message.reply_text("Speedtest 𝗗𝗶𝘀𝗮𝗯𝗹𝗲𝗱")
     else:
         await message.reply_text(usage)
