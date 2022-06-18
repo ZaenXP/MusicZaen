@@ -334,7 +334,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷<b>__**Name**:__</b>[{title[:25]}]({link}) \n⏱<b>**Duration:**</b> {duration} \n🎧<b>**Requested by:**</b>{checking}")
+        caption=(f"🎥<b>__Playing:__</b>[{title[:25]}]({link}) \n⏳<b>__Duration:__</b> {duration} \n👤<b>__Requested by:__</b>{checking}")
     )   
         return await mystic.delete()
          
@@ -441,18 +441,17 @@ async def startyuplay(_,CallbackQuery):
         f20.close()
         f111 = open(f'search/{_chat_}duration.txt', 'w')
         f111.write(f"{duration}") 
-
         f111.close()
         f27 = open(f'search/{_chat_}username.txt', 'w')
         f27.write(f"{checking}") 
         f27.close()
         f28 = open(f'search/{_chat_}videoid.txt', 'w')
         f28.write(f"{videoid}") 
-        f28.close(
+        f28.close()
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
-        caption=(f"🏷<b>**Name**</b>[{title[:25]}]({url}) \n⏱<b**>Duration**</b> {duration} \n💡<b>***Status**){Playing}\n\n🎧<b>**Requested by:**</b>{checking} \n📩<b>__Queued at:__</b> <b>#{position}!</b>"),
+        caption=(f"🎬<b>__Song:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{id})\n👤<b>__Requested by:__ </b>{checking} \n📚<b>__Queued at:__</b> <b>#{position}!</b>"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
         os.remove(thumb)
