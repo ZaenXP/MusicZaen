@@ -271,7 +271,7 @@ async def play(_, message: Message):
         buttons = single_markup(ID, duration, user_id, query)
         hmo = await message.reply_photo(
             photo=thumb, 
-            caption=(f"**🔗Title**: <b>{title}</b>\n\n ⏳Duration: {duration}\n\n 🔗 <u>__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{ID})__</u>\n"),    
+            caption=(f"**🔗Title**: <b>{title}</b>\n\n ⏳Duration: {duration}\n\n 🔗"),    
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
@@ -451,7 +451,7 @@ async def startyuplay(_,CallbackQuery):
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
-        caption=(f"🎬<b>__Song:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{id})\n👤<b>__Requested by:__ </b>{checking} \n📚<b>__Queued at:__</b> <b>#{position}!</b>"),
+        caption=(f"🎬<b>__Song:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n ?start=info_{id})\n👤<b>__Requested by:__ </b>{checking} \n📚<b>__Queued at:__</b> <b>#{position}!</b>"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
         os.remove(thumb)
