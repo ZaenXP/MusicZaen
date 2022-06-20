@@ -3,3 +3,12 @@ services:
   worker:
     build: .
     environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      BOT_TOKEN: $BOT_TOKEN
+      CHANNEL: $CHANNEL
+      GROUP: $GROUP
+      LOG_GROUP_ID: $LOG_GROUP_ID
+      OWNER_ID: $OWNER_ID
+      SESSION_NAME: $SESSION_NAME
+      SUDO_USERS: $SUDO_USERS
