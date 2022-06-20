@@ -473,7 +473,7 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🎥<b>__Playing:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> [⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{id})\n👤**__Requested by:__** {checking}")
+        caption=(f"🎥<b>__Playing:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> [⚡️️️ Powered by : @ZaenTapiBot]?start=info_{id})\n👤**__Requested by:__** {checking}")
     )   
         os.remove(thumb)
         await CallbackQuery.message.delete()
@@ -532,7 +532,7 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
-            f"1️⃣<b>{title1}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n\n2️⃣<b>{title2}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n\n3️⃣<b>{title3}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n\n4️⃣<b>{title4}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n\n5️⃣<b>{title5}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>",   
+            f"1️⃣<b>{title1}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by : @ZaenTapibot]?start=info_{ID1})__</u>\n\n2️⃣<b>{title2}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by : @ZaenTapibot]?start=info_{ID2})__</u>\n\n3️⃣<b>{title3}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by : @ZaenTapibot]?start=info_{ID3})__</u>\n\n4️⃣<b>{title4}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by : @ZaenTapibot]?start=info_{ID4})__</u>\n\n5️⃣<b>{title5}</b>\n  ┗  🔗 <u>__[⚡️️️ Powered by : @ZaenTapibot]?start=info_{ID5})__</u>",   
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
