@@ -271,7 +271,7 @@ async def play(_, message: Message):
         buttons = single_markup(ID, duration, user_id, query)
         hmo = await message.reply_photo(
             photo=thumb, 
-            caption=(f"**🏷Name**: <b>{title}</b>\n\n **⏱Duration:** {duration}"),    
+            caption=(f"**🔗Title**: <b>{title}</b>\n\n ⏳Duration: {duration}"),    
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
@@ -303,7 +303,7 @@ async def play(_, message: Message):
         checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
         await message.reply_photo(
             photo=thumb,
-            caption=(f"🏷<b>**Name:**</b>[{title[:25]}]({link}) \n⏱<b>**Duration:**</b> {duration} \n🎧<b>**Requested by:**</b>{checking} \n💡<b>**Queued at:**</b> <b>#{position}!</b>"),
+            caption=(f"🎬<b>__Song:__</b>[{title[:25]}]({link}) \n⏳<b>__Duration:__</b> {duration} \n👤<b>__Requested by:__ </b>{checking} \n📚<b>__Queued at:__</b> <b>#{position}!</b>"),
             reply_markup=InlineKeyboardMarkup(buttons)
         )
         return await mystic.delete()     
@@ -334,7 +334,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷<b>**Name:**</b>[{title[:25]}]({link}) \n⏱<b>**Duration:**</b> {duration} \n🎧<b>**Requested by:**</b>{checking}")
+        caption=(f"🎥<b>__Playing:__</b>[{title[:25]}]({link}) \n⏳<b>__Duration:__</b> {duration} \n👤<b>__Requested by:__</b>{checking}")
     )   
         return await mystic.delete()
          
@@ -451,7 +451,7 @@ async def startyuplay(_,CallbackQuery):
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
-        caption=(f"🏷<b>**Name:**</b>[{title[:25]}]({url}) \n⏱<b>**Duration:**</b> {duration} \n ?start=info_{id})\n🎧<b>**Requested by:**</b>{checking} \n💡<b>**Queued at:**</b> <b>#{position}!</b>"),
+        caption=(f"🎬<b>__Song:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n ?start=info_{id})\n👤<b>__Requested by:__ </b>{checking} \n📚<b>__Queued at:__</b> <b>#{position}!</b>"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
         os.remove(thumb)
@@ -473,7 +473,7 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷<b>**Name:**</b>[{title[:25]}]({url}) \n⏱<b>**Duration:**</b> {duration} \n💡<b>**Status:** Playing\n🎧**Requested by:** {checking}")
+        caption=(f"🎥<b>__Playing:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> ⚡️️️ Powered by : @ZaenTapiBot \n👤**__Requested by:__** {checking}")
     )   
         os.remove(thumb)
         await CallbackQuery.message.delete()
@@ -532,7 +532,7 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
-            f"1️⃣<b>{title1}</b>\n  ┗<u>⚡️️️__Powered by: Zaen__</u>\n\n2️⃣<b>{title2}</b>\n  ┗<u>⚡️️️__Powered by: Zaen__</u>\n\n3️⃣<b>{title3}</b>\n  ┗<u>⚡️️️__Powered by: Zaen__</u>\n\n4️⃣<b>{title4}</b>\n  ┗<u>⚡️️️__Powered by: Zaen__</u>\n\n5️⃣<b>{title5}</b>\n  ┗<u>⚡️️️__Powered by: Zaen__</u>",   
+            f"1️⃣<b>{title1}</b>\n  ┗  🔗 ⚡️️️ Powered by : @ZaenTapibot </u>\n\n2️⃣<b>{title2}</b>\n  ┗  🔗  ⚡️️️ Powered by : @ZaenTapibot </u>\n\n3️⃣<b>{title3}</b>\n  ┗  🔗  ⚡️️️ Powered by : @ZaenTapibot </u>\n\n4️⃣<b>{title4}</b>\n  ┗  🔗  ⚡️️️ Powered by : @ZaenTapibot </u>\n\n5️⃣<b>{title5}</b>\n  ┗  🔗 ⚡️️️ Powered by : @ZaenTapibot </u>",   
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
