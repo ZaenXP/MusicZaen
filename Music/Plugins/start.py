@@ -21,11 +21,11 @@ from Music.MusicUtilities.database.sudo import (get_sudoers, get_sudoers, remove
 def start_pannel():  
     buttons  = [
             [
-                InlineKeyboardButton(text="[Channel]", url="https://t.me/Mafia_TobaTz"),
-                InlineKeyboardButton(text="[Group]", url="https://t.me/Mafia_TobaTz")
+                InlineKeyboardButton(text="[Channel]", url="https://t.me/KupTau"),
+                InlineKeyboardButton(text="[Group]", url="https://t.me/SharingUserbot")
             ],  
 
-            [ InlineKeyboardButton("[Dev]", url=f"https://t.me/Mafia_Tobatz"),]
+            [ InlineKeyboardButton("[Dev]", url=f"https://t.me/TeleUdahRusak"),]
     ]
     return "🎛  **This is Music Music Bot**", buttons
 
@@ -36,9 +36,9 @@ pstart_markup=InlineKeyboardMarkup(
                 ], 
                 [
                     InlineKeyboardButton(
-                        "[Channel]", url=f"https://t.me/Mafia_TobaTz"), 
+                        "[Channel]", url=f"https://t.me/KupTau"), 
                     InlineKeyboardButton(
-                        "[Support]", url=f"https://t.me/Mafia_TobaTz")
+                        "[Support]", url=f"https://t.me/SharingUserbot")
                 ],
           
                 
