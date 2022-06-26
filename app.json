@@ -1,5 +1,5 @@
 {
-    "name": "Zaen Music",
+    "name": "MusicZaen",
     "logo": "https://telegra.ph/file/a8825c4326efdbd317847.jpg",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": [
@@ -58,6 +58,11 @@
             "description": "Isi dengan username channel tanpa @",
             "required": true,
             "value": "Mafia_Tobatz"
+        },
+         "MUST_JOIN": {
+            "description": "Isi dengan username channel tanpa @",
+            "required": true,
+            "value": "KupTau"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
