@@ -46,7 +46,7 @@ async def gstats(_, message):
     free = (hdd.free / (1024.0 ** 3))
     free = str(free)
     msg = f"""
-**Global Stats of **MusicZaen** Bot**:\n\n
+**Global Stats of **𝗠𝘂𝘀𝗶𝗰𝗭𝗮𝗲𝗻** Bot**:\n\n
 [•]<u>__**System Stats**__</u>
 **Music Uptime:** {uptime}
 **System Process:** Online
